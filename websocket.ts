@@ -2,9 +2,10 @@ import Stomp from "stompjs";
 
 import index from "./startConnection";
 
-const BASE_URL = "wss://apis.marketnews.com/wss";
+const BASE_URL = "wss://apis-test.marketnews.com/wss";
 
 export default async function connectToWS(access_token: string): Promise<void> {
+
   try {
     const client = Stomp.overWS(BASE_URL);
 
